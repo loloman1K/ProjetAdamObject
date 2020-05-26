@@ -22,7 +22,7 @@
 <body>
 
 <div class="uphead">
-<img src="data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site" style="margin-right:5vw;">
+<a href="admin.php"><img src="data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site" style="margin-right:5vw;"></a>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-ligh">
 

@@ -1,5 +1,5 @@
 <?php
-class CampsRepository
+class AdamRepository
 {
 
   //connexion à la bdd
@@ -16,7 +16,7 @@ class CampsRepository
     $this->_db = $db;
   }
 
-  public function add(Camps $article)
+  public function add(Adam $article)
   {
     //prepare une requete d'ajout d'article
     $request = $this->_db->prepare("INSERT INTO article(article_title, article_page, article_text, article_abstract, article_picture, article_originPicture, article_link) VALUES (:title, :page, :text, :abstract, :picture, :originPicture, :link)");
@@ -67,12 +67,12 @@ class CampsRepository
       return $tabloDonnees;
   }
 
-  public function update(Camps $article)
+  public function update(Adam $adam)
   {
       // On prépare la requete afin de modifier un article  dans
       // la BDD, puis on execute en injectant
       // l'attribut $_nom de l'objet $story
-      $request = $this->_db->prepare("UPDATE camps SET article_title= :title, article_page= :page, article_text= :text, article_abstract= :abstract, article_picture= :picture, article_originPicture= :originPicture, article_link= :link WHERE article_id=".$article->article_id());
+      $request = $this->_db->prepare("UPDATE Adam SET article_title= :title, article_page= :page, article_text= :text, article_abstract= :abstract, article_picture= :picture, article_originPicture= :originPicture, article_link= :link WHERE article_id=".$article->article_id());
       $request->execute(array(
         'title' => $article->article_title(),
         'page' => $article->article_page(),
@@ -86,7 +86,7 @@ class CampsRepository
 
   }
 
-  public function delete($article_id)
+  public function delete($adam_id)
   {
       // execute une requete DELETE pour supprimer un article Camps avec son id
       $this->_db->exec("DELETE FROM article WHERE article_id=".$article_id);
@@ -96,7 +96,7 @@ class CampsRepository
   public function getCountById()
   {
       $tabloCount = [];
-      //execute une requete SELECT qui récupère uniquement les titres de chaque articles
+      //execute une requete SELECT qui récupère uniquement les titres de  chaque articles
       $req = $this->_db->query("SELECT COUNT(*) FROM article");
       $tabloCount = $req->fetch();
 

@@ -1,7 +1,6 @@
-
-
 <?php
-require 'bdd.php';
+require '../identifier.php';
+
 
 $log = $_POST["login"];
 $mdp = $_POST["mdp"];
@@ -22,3 +21,5 @@ if ($donnees != false) {
 } else {
     echo "mauvais login";
 }
+
+

@@ -1,5 +1,5 @@
 <?php
-
+require 'identifier.php';
 require 'vue/header.php';
 require 'php/fonction.php';
 require 'php/bdd.php';

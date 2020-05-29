@@ -1,8 +1,6 @@
 <?php
 require 'identifier.php';
 require 'vue/header.php';
-require 'php/fonction.php';
-
 ?>
 
 
@@ -25,17 +23,9 @@ require 'php/fonction.php';
                         </p>
                       </div>
                     </div>
-<section>
-<article>
-                    <?php
-/* Lien vers la base de donnée table Article */
-          AfficheArticleHome($id=1);
-                    ?>
-
-</article>
-</section>
 
 
+<a href="office/LoginForm.php">Login Admin</a>
 
 <?php
 

@@ -7,12 +7,10 @@
 
   <meta charset="utf-8">
 
-  <link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-
-
-  <link rel="stylesheet" href="css/style_tablette.css">
-  <link rel="stylesheet" href="css/style_smartphone.css">
+  <link rel="stylesheet" href="../bootstrap-4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style_tablette.css">
+  <link rel="stylesheet" href="../css/style_smartphone.css">
 
   <title>Pour les Yeux d'Adam</title>
 
@@ -21,11 +19,11 @@
 <body>
 
 <div class="uphead">
-<a href="admin.php"><img src="data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site" style="margin-right:5vw;"></a>
+<a href="admin.php"><img src="../data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site" style="margin-right:5vw;"></a>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-ligh">
 
-  <a class="navbar-brand" href="index.php"><h1>Acceuil</h1></a>
+  <a class="navbar-brand" href="../index.php"><h1>Acceuil</h1></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

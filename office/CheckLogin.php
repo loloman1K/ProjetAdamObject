@@ -5,7 +5,6 @@ require '../identifier.php';
 $log = $_POST["login"];
 $mdp = $_POST["mdp"];
 
-require 'sessionIn.php';
 
 $reponse = $db->query("SELECT * FROM admin WHERE log_admin='".$log."'");
 // var_dump($reponse);
@@ -15,6 +14,7 @@ if ($donnees != false) {
     $reponse2 = $db->query("SELECT * FROM admin WHERE log_admin='".$log."' AND mdp_admin='".$mdp."'");
     $donnees2 = $reponse2->fetch();
     if ($donnees2 != false) {
+        require 'sessionIn.php';
         header("Location: LoggedIn.php");
     }
     else{
@@ -22,4 +22,5 @@ if ($donnees != false) {
     }
 } else {
     echo "mauvais login";
+
 }

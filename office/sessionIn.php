@@ -1,9 +1,20 @@
 <?php
-session_start();
-/*session is started if you don't write this line can't use $_Session  global variable*/
-//$_SESSION["newsession"]=$value;
-$_SESSION['login']     = $log;
-$_SESSION['password']  = $mdp;
+// session_start();
+// $_SESSION['login']     = $log;
+// $_SESSION['password']  = $mdp;
+//
+// echo var_dump($_SESSION);
 
-echo var_dump($_SESSION);
+require 'Session.php';
+
+
+$data = Session::getInstance();
+
+// Let's store datas in the session
+$data->login = $log;
+$data->password = $mdp;
+
+
+//echo var_dump($data->time);
+
 ?>

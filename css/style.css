@@ -2,8 +2,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-
-
 }
 
 /* ensemble du bloc page*/
@@ -15,13 +13,13 @@ body
 
 /* header */
 /*logo + nav */
-.uphead
+/* .uphead
 {
 	display: flex;
 	width: 100%;
 	margin-top: 3vh;
 	margin-left: 3vw;
-}
+} */
 
 
 
@@ -82,9 +80,9 @@ p
 
 .Logo
 {
-	width: 15vw;
+	width: 15%;
 	border-radius: 30%;
-	height:20vh;
+	height:20%;
 }
 
 /*corps*/

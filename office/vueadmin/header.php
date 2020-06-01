@@ -17,13 +17,10 @@
 </head>
 
 <body>
-
-<div class="uphead">
-<a href="admin.php"><img src="../data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site" style="margin-right:5vw;"></a>
-
+  
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-  <a class="navbar-brand" href="../index.php"><h1>Acceuil</h1></a>
+  <a class="navbar-brand" href="../index.php"><img src="../data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site">Acceuil</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,7 +29,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="adam.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <h1>Adam's Story</h1>
+            Adam's Story
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="adam.php">Introduction</a>
@@ -43,7 +40,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="camsp.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <h1>CAMSP</h1>
+            CAMSP
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="camsp.php">Présentation du Camsp</a>
@@ -54,17 +51,17 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="filmsadListeAjout.php">
-            <h1>Films AD</h1>
+          Films AD
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="portefolio.php">
-            <h1>Portefolio</h1>
+          Portefolio
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.php">
-            <h1>Contact</h1>
+          Contact
           </a>
         </li>
 

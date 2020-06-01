@@ -9,6 +9,7 @@ require 'vueadmin/header.php';
 
 </div>
 
+<a href="LogOut.php" class="btn btn-outline-danger">Déconnexion</a>
 
 <?php require 'vueadmin/footer.php';
 ?>

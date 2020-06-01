@@ -19,22 +19,21 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-<div class="uphead">
-<a href="admin.php"><img src="data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site" style="margin-right:5vw;"></a>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-ligh">
-
-  <a class="navbar-brand" href="index.php"><h1>Acceuil</h1></a>
+    <a class="navbar-brand" href="../index.php"><img src="data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+        <li>
+          <a class="navbar-brand" href="../index.php">Acceuil</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="adam.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <h1>Adam's Story</h1>
+            Adam's Story
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="adam.php">Introduction</a>
@@ -45,7 +44,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="camsp.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <h1>CAMSP</h1>
+            CAMSP
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="camsp.php">Présentation du Camsp</a>
@@ -56,29 +55,27 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="filmsadListeAjout.php">
-            <h1>Films AD</h1>
+            Films AD
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="portefolio.php">
-            <h1>Portefolio</h1>
+            Portefolio
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.php">
-            <h1>Contact</h1>
+            Contact
           </a>
         </li>
-
-
       </ul>
 
   </nav>
-<!-- barre search prete à activation/*
+  <!-- barre search prete à activation/*
      <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
 -->
-    </div>
+  </div>
   </div>

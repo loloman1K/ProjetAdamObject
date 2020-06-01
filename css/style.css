@@ -5,10 +5,6 @@
 }
 
 /* ensemble du bloc page*/
-body
-{
-
-}
 
 
 /* header */
@@ -80,9 +76,9 @@ p
 
 .Logo
 {
-	width: 15%;
+	width: 5vw;
 	border-radius: 30%;
-	height:20%;
+	height:10vh;
 }
 
 /*corps*/

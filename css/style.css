@@ -50,7 +50,7 @@ h1
 	text-align: center;
 	vertical-align: center;
 	margin: auto;
-
+	margin-top: 2vh;
 }
 
 h2
@@ -110,8 +110,8 @@ h4
 }
 
 h2.intro{
-	text-align: center;
-}
+	margin:auto;
+	}
 
 /* Fin du .block-container */
 

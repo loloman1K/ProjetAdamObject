@@ -15,7 +15,7 @@ if ($donnees != false) {
     $donnees2 = $reponse2->fetch();
     if ($donnees2 != false) {
         require 'sessionIn.php';
-        header("Location: LoggedIn.php");
+        header("Location:LoggedIn.php?testlog=9747272180611");
     }
     else{
         echo "mauvais mdp";

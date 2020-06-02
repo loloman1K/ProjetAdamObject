@@ -31,7 +31,7 @@ require 'vue/header.php';
   </article>
 </section>
 
-<a href="office/LoginForm.php">Login Admin</a>
+<a href="office/Login/LoginForm.php">Login Admin</a>
 
 <?php
 

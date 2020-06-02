@@ -7,10 +7,10 @@
 
   <meta charset="utf-8">
 
-  <link rel="stylesheet" href="../bootstrap-4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/style_tablette.css">
-  <link rel="stylesheet" href="../css/style_smartphone.css">
+  <link rel="stylesheet" href="../..//bootstrap-4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/style_tablette.css">
+  <link rel="stylesheet" href="../../css/style_smartphone.css">
 
   <title>Pour les Yeux d'Adam</title>
 
@@ -20,7 +20,7 @@
   
 <nav class="navbar navbar-expand-lg navbar-light">
 
-<a class="navbar-brand" href="../index.php"><img src="../data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site"></a>
+<a class="navbar-brand" href="../../index.php"><img src="../../data/logo.jpeg" class="Logo" alt="Logo du site" title="Logo du site"></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -28,7 +28,7 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
     <li>
-      <a class="navbar-brand" href="../index.php">Acceuil</a>
+      <a class="navbar-brand" href="../../index.php">Acceuil</a>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="adam.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

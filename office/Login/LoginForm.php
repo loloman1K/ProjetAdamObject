@@ -1,4 +1,4 @@
-<?php require 'vueadmin/header.php';
+<?php require '../vueadmin/header.php';
 ?>
 
 <div class="container-fluid">
@@ -20,5 +20,5 @@
 </div>
 
 
-<?php require 'vueadmin/footer.php';
+<?php require '../vueadmin/footer.php';
 ?>

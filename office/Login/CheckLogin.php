@@ -1,6 +1,6 @@
 <?php
 
-require '../identifier.php';
+require '../../identifier.php';
 
 $log = $_POST["login"];
 $mdp = $_POST["mdp"];

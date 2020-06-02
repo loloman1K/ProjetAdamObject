@@ -1,6 +1,6 @@
 <?php
 
-require 'vueadmin/header.php';
+require '../vueadmin/header.php';
 require 'Session.php';
 
 ?>
@@ -16,10 +16,10 @@ require 'Session.php';
 $data = Session::getInstance();
 session_destroy();
 // header("Pragma: no-cache");
-header('Location:../index.php');
+header('Location:../../index.php');
 ?>
 
 <a href="LoginForm.php" class="btn btn-outline-success">Se reconnecter</a>
 
-<?php require 'vueadmin/footer.php';
+<?php require '../vueadmin/footer.php';
 ?>

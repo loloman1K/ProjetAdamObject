@@ -1,6 +1,6 @@
 <?php
 
-require 'vueadmin/header.php';
+require '../vueadmin/header.php';
 
 if (isset($_GET['testlog'])){
     if($_GET['testlog']==9747272180611 ){
@@ -22,7 +22,7 @@ else {
   echo "You are not logged in !";
 }
 
-require 'vueadmin/footer.php';
+require '../vueadmin/footer.php';
 }
 else{
   header('Location: LoggedIn.php');

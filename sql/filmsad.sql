@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : ven. 29 mai 2020 à 08:07
+-- Généré le : mar. 02 juin 2020 à 19:54
 -- Version du serveur :  5.7.26
 -- Version de PHP : 7.3.8
 
@@ -146,6 +146,16 @@ INSERT INTO `filmsad` (`filmsad_id`, `filmsad_title`, `filmsad_director`, `films
 --
 ALTER TABLE `filmsad`
   ADD PRIMARY KEY (`filmsad_id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `filmsad`
+--
+ALTER TABLE `filmsad`
+  MODIFY `filmsad_id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

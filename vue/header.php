@@ -29,10 +29,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li>
-    <a class="navbar-brand" href="../index.php">Acceuil</a>
+    <a class="navbar-brand" style= "margin-right: 3vw;" href="../index.php">Acceuil</a>
   </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="adam.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" style="margin-right: 3vw;" href="adam.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Adam's Story
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -43,7 +43,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="camsp.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="camsp.php" id="navbarDropdown" style="margin-right: 3vw;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           CAMSP
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,17 +54,17 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="filmsadListeAjout.php">
+        <a class="nav-link" href="filmsadListeAjout.php" style="margin-right: 3vw;">
         Films AD
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="portefolio.php">
+        <a class="nav-link" href="portefolio.php" style="margin-right: 3vw;">
         Portefolio
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.php">
+        <a class="nav-link" href="contact.php" style="margin-right: 3vw;">
         Contact
         </a>
       </li>

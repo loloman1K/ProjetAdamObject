@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : ven. 29 mai 2020 à 07:58
+-- Généré le : mar. 02 juin 2020 à 19:54
 -- Version du serveur :  5.7.26
 -- Version de PHP : 7.3.8
 
@@ -46,6 +46,16 @@ CREATE TABLE `evenementPortefolio` (
 --
 ALTER TABLE `evenementPortefolio`
   ADD PRIMARY KEY (`evenementPortefolio_id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `evenementPortefolio`
+--
+ALTER TABLE `evenementPortefolio`
+  MODIFY `evenementPortefolio_id` int(7) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

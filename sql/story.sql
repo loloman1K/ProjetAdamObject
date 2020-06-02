@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : ven. 29 mai 2020 à 07:58
+-- Généré le : mar. 02 juin 2020 à 19:54
 -- Version du serveur :  5.7.26
 -- Version de PHP : 7.3.8
 
@@ -44,6 +44,16 @@ CREATE TABLE `story` (
 --
 ALTER TABLE `story`
   ADD PRIMARY KEY (`story_id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `story`
+--
+ALTER TABLE `story`
+  MODIFY `story_id` int(7) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

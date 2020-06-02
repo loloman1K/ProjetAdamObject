@@ -31,7 +31,7 @@ class Session
         }
 
         self::$instance->startSession();
-
+// echo var_dump(self::$instance);
         return self::$instance;
     }
 
@@ -48,7 +48,7 @@ class Session
         {
             $this->sessionState = session_start();
         }
-
+        // echo var_dump($this->sessionState);
         return $this->sessionState;
     }
 

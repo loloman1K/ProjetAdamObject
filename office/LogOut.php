@@ -15,6 +15,8 @@ require 'Session.php';
 // rappel de la session ouverte pour la detruire
 $data = Session::getInstance();
 session_destroy();
+// header("Pragma: no-cache");
+header('Location:../index.php');
 ?>
 
 <a href="LoginForm.php" class="btn btn-outline-success">Se reconnecter</a>

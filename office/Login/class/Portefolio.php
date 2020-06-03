@@ -115,14 +115,14 @@ public function other_portefolio()
  public function setDate_portefolio($date)
  {
      if (is_string($date)) {
-         $this->date_portefolio = $date;
+         $this->_date_portefolio = $date;
      }
  }
 
  public function setOther_portefolio($other)
  {
      if (is_string($other)) {
-         $this->other_portefolio = $other;
+         $this->_other_portefolio = $other;
      }
  }
 

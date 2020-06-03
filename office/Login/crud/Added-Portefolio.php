@@ -4,6 +4,11 @@ require '../../../chargeauto.php';
 require '../../vueadmin/header.php';
 ?>
 
+<link rel="stylesheet" href="../../../bootstrap-4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../css/style.css">
+<link rel="stylesheet" href="../../../css/style_tablette.css">
+<link rel="stylesheet" href="../../../css/style_smartphone.css">
+
   <h1 style="margin-bottom:4vh">Portefolio Ajouté</h1>
 
 
@@ -32,8 +37,8 @@ $myPortefolioRepo = new PortefolioRepository($db);
 $myPortefolioRepo -> add($myPortefolio);
 
   echo " <article>
-              <img>" . $portefolioTable['picture_portefolio'] . "</img>
-              <img>" . $portefolioTable['originPicture_portefolio'] . "</img>
+              <img src=../../../images/". $portefolioTable['picture_portefolio']." width='320' height='200' class='img-fluid' "."</img>
+              <img src=../../../images/". $portefolioTable['originPicture_portefolio']." width='320' height='200' class='img-fluid' "."</img>
               <p> Lieu : ". $portefolioTable['lieu_portefolio'] . "</p>
               <p> Date : ". $portefolioTable['date_portefolio'] ."</p>
               <p> Autre : ". $portefolioTable['other_portefolio'] ."</p>

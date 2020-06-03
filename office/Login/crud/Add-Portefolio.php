@@ -1,8 +1,14 @@
 <?php
 require '../../../identifier.php';
 require '../../../chargeauto.php';
-require '../../vueadmin/header.php';
 ?>
+
+<link rel="stylesheet" href="../../../bootstrap-4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../css/style.css">
+<link rel="stylesheet" href="../../../css/style_tablette.css">
+<link rel="stylesheet" href="../../../css/style_smartphone.css">
+
+<title>Pour les Yeux d'Adam</title>
 
 <h1>Ajouter un Portefolio</h1>
 
@@ -36,8 +42,3 @@ require '../../vueadmin/header.php';
         <button type="submit" class="btn btn-outline-success" style="margin:auto;">Ajouter</button>
     </div>
 </form>
-
-
-<?php
-require '../../vueadmin/footer.php';
-?>

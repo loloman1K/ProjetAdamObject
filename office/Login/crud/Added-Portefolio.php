@@ -1,7 +1,7 @@
 <?php
 require '../../../identifier.php';
-
-require '../../vue/header.php';
+require '../../../chargeauto.php';
+require '../vueadmin/header.php';
 ?>
 
   <h1 style="margin-bottom:4vh">Portefolio Ajouté</h1>
@@ -42,6 +42,6 @@ $monPortefolioRepo -> add($myPortefolio);
 ?>
 <?php
 
-require '../../vue/footer.php';
+require '../vueadmin/footer.php';
 
 ?>

@@ -1,5 +1,6 @@
 <?php
 require '../../../identifier.php';
+require '../../../chargeauto.php';
 require '../../vueadmin/header.php';
 ?>
 
@@ -7,11 +8,11 @@ require '../../vueadmin/header.php';
 
 <form class="w-75" method="POST" action="Added-Portefolio.php" style="margin:auto;">
     <div class="form-group">
-        <label for="picture" style="color:black;">Image réduite du Portefolio</label>
+        <label for="img" style="color:black;">Image réduite du Portefolio</label>
         <input type="text" id="picture" name="picture" class="form-control" placeholder="Rensignez le chemin de l'Image du Portefolio (taille réduite)">
     </div>
     <div class="form-group">
-        <label for="picture" style="color:black;">Image taille réelle du Portefolio</label>
+        <label for="img" style="color:black;">Image taille réelle du Portefolio</label>
         <input type="text" id="originPicture" name="originPicture" class="form-control" placeholder="Rensignez le chemin de l'Image du Portefolio (grande taille)">
     </div>
     <div class="form-group">
@@ -38,5 +39,5 @@ require '../../vueadmin/header.php';
 
 
 <?php
-require '../../../vue/footer.php';
+require '../../vueadmin/footer.php';
 ?>

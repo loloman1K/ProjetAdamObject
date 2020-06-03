@@ -1,5 +1,6 @@
 <?php
-
+require '../../identifier.php';
+require '../../chargeauto.php';
 require '../vueadmin/header.php';
 
 if (isset($_GET['testlog'])){

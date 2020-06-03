@@ -1,7 +1,7 @@
 <?php
 require '../../../identifier.php';
 require '../../../chargeauto.php';
-require '../vueadmin/header.php';
+require '../../vueadmin/header.php';
 ?>
 
   <h1 style="margin-bottom:4vh">Portefolio Ajouté</h1>
@@ -18,18 +18,18 @@ $other = $_POST['other'];
 
 
 $portefolioTable = array(
-  "id_portefolio" => $id,    
+  "id_portefolio" => $id,
   "picture_portefolio" => $picture,
   "originPicture_portefolio" => $originPicture,
-  'lieu' => $lieu,
-  'date' => $date,
-  'other' => $other);
+  'lieu_portefolio' => $lieu,
+  'date_portefolio' => $date,
+  'other_portefolio' => $other);
 
 $myPortefolio = new Portefolio($portefolioTable);
 
 $myPortefolioRepo = new PortefolioRepository($db);
 
-$monPortefolioRepo -> add($myPortefolio);
+$myPortefolioRepo -> add($myPortefolio);
 
   echo " <article>
               <img>" . $portefolioTable['picture_portefolio'] . "</img>
@@ -42,6 +42,6 @@ $monPortefolioRepo -> add($myPortefolio);
 ?>
 <?php
 
-require '../vueadmin/footer.php';
+require '../../vueadmin/footer.php';
 
 ?>

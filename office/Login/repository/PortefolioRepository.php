@@ -68,10 +68,10 @@ class PortefolioRepository
 
    public function update(Portefolio $portefolio)
    {
-       // On prépare la requete afin de modifier un alien dans 
+       // On prépare la requete afin de modifier un Portefolio dans 
        // la BDD, puis on execute en injectant 
-       // l'attribut $_nom de l'objet $alien
-       $request = $this->_db->prepare("UPDATE portefolio SET picture_portefolio= :picture, originPicture= :originPicture, evenement_portefolio= :evenement, lieu_portefolio= :lieu, date_portefolio= :date, other_portefolio= :other WHERE id_portefolio=".$portefolio->id_portefolio());
+       // l'attribut $_nom de l'objet $Portefolio
+       $request = $this->_db->prepare("UPDATE portefolio SET picture_portefolio= :picture, originPicture_portefolio= :originPicture, evenement_portefolio= :evenement, lieu_portefolio= :lieu, date_portefolio= :date, other_portefolio= :other WHERE id_portefolio=".$portefolio->id_portefolio());
        $request->execute(array(
            'picture' => $portefolio->picture_portefolio(),
            'originPicture' => $portefolio->originPicture_portefolio(),

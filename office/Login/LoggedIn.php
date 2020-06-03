@@ -16,6 +16,24 @@ if (isset($_GET['testlog'])){
 
 <a href="LogOut.php" class="btn btn-outline-danger">Déconnexion</a>
 
+<section class="card-wrapper">
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Portefolio</h5>
+    <a href="crud/Add-Portefolio.php" class="btn btn-outline-primary">Ajouter un Portefolio</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;margin-left:10vw;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Story</h5>
+    <a href="crud/%Add-Story%.php" class="btn btn-outline-primary">Ajouter une Story</a>
+  </div>
+</div>
+</section>
+
 <?php 
 }
 else {
@@ -32,3 +50,7 @@ else{
   header('Location: LoginForm.php');
 }
 ?>
+
+
+
+

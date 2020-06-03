@@ -30,7 +30,7 @@ if (isset($_GET['testlog'])){
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Story</h5>
-    <a href="crud/%Add-Story%.php" class="btn btn-outline-primary">Ajouter une Story</a>
+    <a href="crud/Add-Story.php" class="btn btn-outline-primary">Ajouter une Story</a>
   </div>
 </div>
 </section>
@@ -51,7 +51,3 @@ else{
   header('Location: LoginForm.php');
 }
 ?>
-
-
-
-

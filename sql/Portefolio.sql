@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mer. 03 juin 2020 à 07:41
+-- Généré le : mer. 03 juin 2020 à 07:51
 -- Version du serveur :  5.7.26
 -- Version de PHP : 7.3.8
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Portefolio`
+-- Structure de la table `portefolio`
 --
 
-CREATE TABLE `Portefolio` (
+CREATE TABLE `portefolio` (
   `portefolio_id` int(7) NOT NULL,
   `portefolio_picture` varchar(100) DEFAULT NULL,
   `portefolio_originPicture` varchar(100) DEFAULT NULL,
@@ -42,9 +42,9 @@ CREATE TABLE `Portefolio` (
 --
 
 --
--- Index pour la table `Portefolio`
+-- Index pour la table `portefolio`
 --
-ALTER TABLE `Portefolio`
+ALTER TABLE `portefolio`
   ADD PRIMARY KEY (`portefolio_id`);
 
 --
@@ -52,9 +52,9 @@ ALTER TABLE `Portefolio`
 --
 
 --
--- AUTO_INCREMENT pour la table `Portefolio`
+-- AUTO_INCREMENT pour la table `portefolio`
 --
-ALTER TABLE `Portefolio`
+ALTER TABLE `portefolio`
   MODIFY `portefolio_id` int(7) NOT NULL AUTO_INCREMENT;
 COMMIT;
 

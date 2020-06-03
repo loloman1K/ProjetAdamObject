@@ -22,8 +22,8 @@ require '../../../chargeauto.php';
         <input type="text" id="originPicture" name="originPicture" class="form-control" placeholder="Renseignez le chemin de l'Image de l'article (grande taille)">
     </div>
     <div class="form-group">
-        <label for="dateArticle" style="color:black;">Date de l'article</label>
-        <input type="date" id="dateArticle" name="dateArticle" class="form-control" placeholder="Renseignez la date de l'article">
+        <label for="page" style="color:black;">Page de l'article</label>
+        <input type="text" id="page" name="page" class="form-control" placeholder="Renseignez la page de l'article">
     </div>
     <div class="form-group">
         <label for="texte" style="color:black;">texte de l'article</label>

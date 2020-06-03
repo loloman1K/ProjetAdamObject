@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Hôte : localhost
--- Généré le : mer. 03 juin 2020 à 07:51
--- Version du serveur :  5.7.26
--- Version de PHP : 7.3.8
+-- Hôte : 127.0.0.1:3306
+-- Généré le :  mer. 03 juin 2020 à 13:00
+-- Version du serveur :  8.0.18
+-- Version de PHP :  7.4.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `Adam`
+-- Base de données :  `adam`
 --
 
 -- --------------------------------------------------------
@@ -27,35 +28,27 @@ SET time_zone = "+00:00";
 -- Structure de la table `portefolio`
 --
 
-CREATE TABLE `portefolio` (
-  `portefolio_id` int(7) NOT NULL,
-  `portefolio_picture` varchar(100) DEFAULT NULL,
-  `portefolio_originPicture` varchar(100) DEFAULT NULL,
-  `portefolio_evenement` text,
-  `portefolio_lieu` varchar(50) DEFAULT NULL,
-  `portefolio_date` date DEFAULT NULL,
-  `portefolio_other` varchar(500) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+DROP TABLE IF EXISTS `portefolio`;
+CREATE TABLE IF NOT EXISTS `portefolio` (
+  `portefolio_id` int(7) NOT NULL AUTO_INCREMENT,
+  `picture_portefolio` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `originPicture_portefolio` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `evenement_portefolio` text CHARACTER SET utf8 COLLATE utf8_general_ci,
+  `lieu_portefolio` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `date_portefolio` date DEFAULT NULL,
+  `other_portefolio` text CHARACTER SET utf8 COLLATE utf8_general_ci,
+  PRIMARY KEY (`portefolio_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
--- Index pour les tables déchargées
+-- Déchargement des données de la table `portefolio`
 --
 
---
--- Index pour la table `portefolio`
---
-ALTER TABLE `portefolio`
-  ADD PRIMARY KEY (`portefolio_id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `portefolio`
---
-ALTER TABLE `portefolio`
-  MODIFY `portefolio_id` int(7) NOT NULL AUTO_INCREMENT;
+INSERT INTO `portefolio` (`portefolio_id`, `picture_portefolio`, `originPicture_portefolio`, `evenement_portefolio`, `lieu_portefolio`, `date_portefolio`, `other_portefolio`) VALUES
+(1, '', '', NULL, '', '0000-00-00', ''),
+(2, '', '', NULL, NULL, '1991-07-18', NULL),
+(3, '', '', NULL, NULL, '1991-07-18', NULL),
+(4, '', '', NULL, NULL, '1991-07-18', NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

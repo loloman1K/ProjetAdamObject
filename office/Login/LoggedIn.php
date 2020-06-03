@@ -33,9 +33,26 @@ if (isset($_GET['testlog'])){
     <a href="crud/Add-Story.php" class="btn btn-outline-primary">Ajouter une Story</a>
   </div>
 </div>
+
+<div class="card" style="width: 18rem;margin-left:10vw;">
+  <img src="..." class="card-img-top" alt="article">
+  <div class="card-body">
+    <h5 class="card-title">Article</h5>
+    <a href="crud/Add-Article.php" class="btn btn-outline-primary">Ajouter un article</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;margin-left:10vw;">
+  <img src="..." class="card-img-top" alt="filmAudio">
+  <div class="card-body">
+    <h5 class="card-title">Film audio</h5>
+    <a href="crud/Add-Filmsad.php" class="btn btn-outline-primary">Ajouter un film audio</a>
+  </div>
+</div>
+
 </section>
 
-<?php 
+<?php
 }
 else {
   echo "You are not logged in !";

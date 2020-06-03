@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.6.6deb5
 -- https://www.phpmyadmin.net/
 --
--- Hôte : localhost
--- Généré le : mar. 02 juin 2020 à 19:54
--- Version du serveur :  5.7.26
--- Version de PHP : 7.3.8
+-- Client :  localhost:3306
+-- Généré le :  Mer 03 Juin 2020 à 13:29
+-- Version du serveur :  5.7.28-0ubuntu0.18.04.4
+-- Version de PHP :  7.2.24-0ubuntu0.18.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -18,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `Adam`
+-- Base de données :  `Adam`
 --
 
 -- --------------------------------------------------------
@@ -28,19 +27,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `filmsad` (
-  `filmsad_id` int(7) NOT NULL,
-  `filmsad_title` varchar(100) DEFAULT NULL,
-  `filmsad_director` varchar(100) DEFAULT NULL,
-  `filmsad_kind` varchar(100) DEFAULT NULL,
-  `filmsad_annee` int(4) DEFAULT NULL,
-  `filmsad_duration` varchar(50) DEFAULT NULL
+  `id_film` int(7) NOT NULL,
+  `title_film` varchar(100) DEFAULT NULL,
+  `director_film` varchar(100) DEFAULT NULL,
+  `kind_film` varchar(100) DEFAULT NULL,
+  `annee_film` int(4) DEFAULT NULL,
+  `duration_film` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `filmsad`
+-- Contenu de la table `filmsad`
 --
 
-INSERT INTO `filmsad` (`filmsad_id`, `filmsad_title`, `filmsad_director`, `filmsad_kind`, `filmsad_annee`, `filmsad_duration`) VALUES
+INSERT INTO `filmsad` (`id_film`, `title_film`, `director_film`, `kind_film`, `annee_film`, `duration_film`) VALUES
 (1, 'A love you', 'PAUL LEFÈVRE', 'comedie', 2015, '1H30'),
 (2, 'Adopte un veuf', 'François Desagnat', 'comedie', 2016, '1h37'),
 (3, 'American Assassin', 'MICHAEL CUESTA', 'Action', 2017, '1h52'),
@@ -138,26 +137,24 @@ INSERT INTO `filmsad` (`filmsad_id`, `filmsad_title`, `filmsad_director`, `films
 (95, 'Zombillénium', 'Arthur de Pins, Alexis Ducord', 'Animation', 2017, ' 1h18');
 
 --
--- Index pour les tables déchargées
+-- Index pour les tables exportées
 --
 
 --
 -- Index pour la table `filmsad`
 --
 ALTER TABLE `filmsad`
-  ADD PRIMARY KEY (`filmsad_id`);
+  ADD PRIMARY KEY (`id_film`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- AUTO_INCREMENT pour les tables exportées
 --
 
 --
 -- AUTO_INCREMENT pour la table `filmsad`
 --
 ALTER TABLE `filmsad`
-  MODIFY `filmsad_id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
-COMMIT;
-
+  MODIFY `id_film` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

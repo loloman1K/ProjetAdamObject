@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mer. 03 juin 2020 à 07:30
+-- Généré le : mer. 03 juin 2020 à 07:41
 -- Version du serveur :  5.7.26
 -- Version de PHP : 7.3.8
 
@@ -28,13 +28,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `Portefolio` (
-  `evenementPortefolio_id` int(7) NOT NULL,
-  `evenementPortefolio_picture` varchar(100) DEFAULT NULL,
-  `evenementPortefolio_originPicture` varchar(100) DEFAULT NULL,
-  `evenementPortefolio_evenement` varchar(1000) DEFAULT NULL,
-  `evenementPortefolio_lieu` varchar(50) DEFAULT NULL,
-  `evenementPortefolio_date` date DEFAULT NULL,
-  `evenementPortefolio_other` varchar(500) DEFAULT NULL
+  `portefolio_id` int(7) NOT NULL,
+  `portefolio_picture` varchar(100) DEFAULT NULL,
+  `portefolio_originPicture` varchar(100) DEFAULT NULL,
+  `portefolio_evenement` text,
+  `portefolio_lieu` varchar(50) DEFAULT NULL,
+  `portefolio_date` date DEFAULT NULL,
+  `portefolio_other` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -45,7 +45,7 @@ CREATE TABLE `Portefolio` (
 -- Index pour la table `Portefolio`
 --
 ALTER TABLE `Portefolio`
-  ADD PRIMARY KEY (`evenementPortefolio_id`);
+  ADD PRIMARY KEY (`portefolio_id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -55,7 +55,7 @@ ALTER TABLE `Portefolio`
 -- AUTO_INCREMENT pour la table `Portefolio`
 --
 ALTER TABLE `Portefolio`
-  MODIFY `evenementPortefolio_id` int(7) NOT NULL AUTO_INCREMENT;
+  MODIFY `portefolio_id` int(7) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

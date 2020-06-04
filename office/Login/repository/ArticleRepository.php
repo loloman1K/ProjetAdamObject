@@ -33,7 +33,7 @@ class ArticleRepository
      'texte' => $article->text_art(),
      'abstract' => $article->abstract_art(),
      'picture' => $article->picture_art(),
-     'originPicture' => $article->originPict_art(),
+     'originPict' => $article->originPict_art(),
      'link' => $article->link_art()
    ));
    // On hydrate l'objet afin que son id deviennt l'id qui vient

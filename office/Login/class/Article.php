@@ -80,10 +80,10 @@ class Article{
        }
    }
 
-   public function setTitle_art($nom)
+   public function setTitle_art($tit)
    {
-       if (is_string($nom)) {
-           $this->_title_art = $nom;
+       if (is_string($tit)) {
+           $this->_title_art = $tit;
        }
    }
 
@@ -94,24 +94,24 @@ class Article{
        }
    }
 
-   public function setText_art($carac)
+   public function setText_art($tex)
    {
-       if (is_string($carac)) {
-           $this->_text_art = $carac;
+       if (is_string($tex)) {
+           $this->_text_art = $tex;
        }
    }
 
-   public function setAbstract_art($force)
+   public function setAbstract_art($abst)
    {
-       if (is_string($force)) {
-           $this->_abstract_art = $force;
+       if (is_string($abst)) {
+           $this->_abstract_art = $abst;
        }
    }
 
-   public function setPicture_art($race)
+   public function setPicture_art($pic)
    {
-       if (is_string($race)) {
-           $this->_picture_art = $race;
+       if (is_string($pic)) {
+           $this->_picture_art = $pic;
        }
    }
 
@@ -128,8 +128,6 @@ class Article{
            $this->_link_art = $link;
        }
    }
-
-
 
 }
 

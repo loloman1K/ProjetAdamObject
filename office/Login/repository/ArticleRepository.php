@@ -49,13 +49,13 @@ class ArticleRepository
        //on vérifie que le paramètre est bien un id
        if (is_int($id)) {
            //on prépare la requete SELECT
-           $request = $this->_db->query("SELECT * FROM portefolio
-       WHERE id_portefolio = $id");
+           $request = $this->_db->query("SELECT * FROM article
+       WHERE id_art = $id");
            // On récupère le résultat dans un tableau
            $donnees = $request->fetch();
            // on retourne un nouvel objet alien construit
            //avec les donnees récupérer de la BDD
-           return new Portefolio($donnees);
+           return new Article($donnees);
        }
    }
 
@@ -63,7 +63,7 @@ class ArticleRepository
    {
        $tabloDonnees = [];
        //execute une requete SELECT qui récupère uniquement les noms de chaque portefolio
-       $req = $this->_db->query("SELECT * FROM portefolio");
+       $req = $this->_db->query("SELECT * FROM article");
        //  transformer le résultat en array
        while ($donnees = $req->fetch()) {
          array_push($tabloDonnees, $donnees);

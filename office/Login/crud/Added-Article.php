@@ -27,24 +27,24 @@ $articleTable = array(
   "id_art" => $id,
   "picture_art" => $picture,
   "originPict_art" => $originPicture,
-  'titre_art' => $titre,
+  'title_art' => $titre,
   'page_art' => $page,
-  'texte_art' => $texte,
+  'text_art' => $texte,
   'abstract_art' => $abstract,
   'link_art' => $link);
 
 $myArticle = new Article($articleTable);
 
 $myArticleRepo = new ArticleRepository($db);
-
+echo var_dump($myArticleRepo->getListName());
 $myArticleRepo -> add($myArticle);
 
   echo " <article>
               <img src=../../../images/". $articleTable['picture_art']." width='320' height='200' class='img-fluid' "."</img>
               <img src=../../../images/". $articleTable['originPict_art']." width='320' height='200' class='img-fluid' "."</img>
-              <p> Titre : ". $articleTable['titre_art'] . "</p>
+              <p> Titre : ". $articleTable['title_art'] . "</p>
               <p> Page : ". $articleTable['page_art'] ."</p>
-              <p> Texte : ". $articleTable['texte_art'] ."</p>
+              <p> Texte : ". $articleTable['text_art'] ."</p>
       </article>";
 
 ?>

@@ -24,13 +24,13 @@ class ArticleRepository
    $request = $this->_db->prepare("INSERT INTO
      article(title_art, page_art, text_art, abstract_art,
        picture_art, originPict_art, link_art)
-       VALUES (:titre, :page, :texte, :abstract, :picture,
+       VALUES (:title, :page, :text, :abstract, :picture,
          :originPict, :link)");
    //execute la requette avec un tableau d'association
    $request->execute(array(
-     'titre' => $article->title_art(),
+     'title' => $article->title_art(),
      'page' => $article->page_art(),
-     'texte' => $article->text_art(),
+     'text' => $article->text_art(),
      'abstract' => $article->abstract_art(),
      'picture' => $article->picture_art(),
      'originPict' => $article->originPict_art(),
@@ -41,6 +41,7 @@ class ArticleRepository
    $article->hydrate(array(
      'id_art' => $this->_db->lastInsertId()
    ));
+   // echo $this->_db->lastInsertId();
  }
 
    //'READ'
@@ -72,26 +73,24 @@ class ArticleRepository
        return $tabloDonnees;
    }
 
-   public function update(Portefolio $portefolio)
+   public function update(Article $article)
    {
-       // On prépare la requete afin de modifier un Portefolio dans
-       // la BDD, puis on execute en injectant
-       // l'attribut $_nom de l'objet $Portefolio
-       $request = $this->_db->prepare("UPDATE portefolio SET picture_portefolio= :picture, originPicture_portefolio= :originPicture, evenement_portefolio= :evenement, lieu_portefolio= :lieu, date_portefolio= :date, other_portefolio= :other WHERE id_portefolio=".$portefolio->id_portefolio());
+       $request = $this->_db->prepare("UPDATE article SET title_art= :title, page_art= :page, text_art= :text, picture_art= :picture, originPicture_art= :originPicture, link_art= :link WHERE id_art=".$article->id_art());
        $request->execute(array(
-           'picture' => $portefolio->picture_portefolio(),
+           'title' => $portefolio->picture_portefolio(),
+           'page' => $portefolio->evenement_portefolio(),
+           'text' => $portefolio->lieu_portefolio(),
+           'abstract' => $portefolio->date_portefolio(),
+           'picture' => $portefolio->originPicture_portefolio(),
            'originPicture' => $portefolio->originPicture_portefolio(),
-           'evenement' => $portefolio->evenement_portefolio(),
-           'lieu' => $portefolio->lieu_portefolio(),
-           'date' => $portefolio->date_portefolio(),
-           'other' => $portefolio->other_portefolio()
+           'link' => $portefolio->other_portefolio()
        ));
    }
 
-   public function delete($id_portefolio)
+   public function delete($id_art)
    {
        // execute une requete DELETE pour supprimer un portefolio avec son id
-       $this->_db->exec("DELETE FROM portefolio WHERE id_portefolio=".$id_portefolio);
+       $this->_db->exec("DELETE FROM article WHERE id_art=".$id_art);
 
    }
 
@@ -99,7 +98,7 @@ class ArticleRepository
    {
        $tabloCount = [];
        //execute une requete SELECT qui récupère uniquement les noms de chaque portefolio
-       $req = $this->_db->query("SELECT COUNT(*) FROM portefolio");
+       $req = $this->_db->query("SELECT COUNT(*) FROM article");
        $tabloCount = $req->fetch();
 
        return $tabloCount;

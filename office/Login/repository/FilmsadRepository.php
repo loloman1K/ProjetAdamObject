@@ -43,8 +43,8 @@ class FilmsadRepository
        //on vérifie que le paramètre est bien un id
        if (is_int($id)) {
            //on prépare la requete SELECT
-           $request = $this->_db->query("SELECT * FROM portefolio
-       WHERE id_portefolio = $id");
+           $request = $this->_db->query("SELECT * FROM filmsad
+       WHERE id_film = $id");
            // On récupère le résultat dans un tableau
            $donnees = $request->fetch();
            // on retourne un nouvel objet alien construit
@@ -57,7 +57,7 @@ class FilmsadRepository
    {
        $tabloDonnees = [];
        //execute une requete SELECT qui récupère uniquement les noms de chaque portefolio
-       $req = $this->_db->query("SELECT * FROM portefolio");
+       $req = $this->_db->query("SELECT * FROM filmsad");
        //  transformer le résultat en array
        while ($donnees = $req->fetch()) {
          array_push($tabloDonnees, $donnees);
@@ -66,26 +66,26 @@ class FilmsadRepository
        return $tabloDonnees;
    }
 
-   public function update(Portefolio $portefolio)
+   public function update(Filmsad $filmsad)
    {
        // On prépare la requete afin de modifier un Portefolio dans
        // la BDD, puis on execute en injectant
        // l'attribut $_nom de l'objet $Portefolio
-       $request = $this->_db->prepare("UPDATE portefolio SET picture_portefolio= :picture, originPicture_portefolio= :originPicture, evenement_portefolio= :evenement, lieu_portefolio= :lieu, date_portefolio= :date, other_portefolio= :other WHERE id_portefolio=".$portefolio->id_portefolio());
+       $request = $this->_db->prepare("UPDATE filmsad SET title_film= :title, director_film= :director, kind_film= :kind, annee_film= :annee, duration_film= :duration
+         WHERE id_film=".$filmsad->id_film());
        $request->execute(array(
-           'picture' => $portefolio->picture_portefolio(),
-           'originPicture' => $portefolio->originPicture_portefolio(),
-           'evenement' => $portefolio->evenement_portefolio(),
-           'lieu' => $portefolio->lieu_portefolio(),
-           'date' => $portefolio->date_portefolio(),
-           'other' => $portefolio->other_portefolio()
+           'title' => $filmsad->title_film(),
+           'director' => $filmsad->director_film(),
+           'kind' => $filmsad->kind_film(),
+           'annee' => $filmsad->annee_film(),
+           'duration' => $filmsad->duration_film()
        ));
    }
 
-   public function delete($id_portefolio)
+   public function delete($id_film)
    {
        // execute une requete DELETE pour supprimer un portefolio avec son id
-       $this->_db->exec("DELETE FROM portefolio WHERE id_portefolio=".$id_portefolio);
+       $this->_db->exec("DELETE FROM filmsad WHERE id_film=".$id_film);
 
    }
 
@@ -93,7 +93,7 @@ class FilmsadRepository
    {
        $tabloCount = [];
        //execute une requete SELECT qui récupère uniquement les noms de chaque portefolio
-       $req = $this->_db->query("SELECT COUNT(*) FROM portefolio");
+       $req = $this->_db->query("SELECT COUNT(*) FROM filmsad");
        $tabloCount = $req->fetch();
 
        return $tabloCount;

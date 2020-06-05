@@ -10,21 +10,21 @@ require '../../../chargeauto.php';
 
 <h1>Liste des Portefolio</h1>
 
-<a href="../LoggedIn.php?testlog=9747272180611" class="btn btn-outline-info">Retour</a>
+<a href="../LoggedIn.php?testlog=9747272180611" class="btn btn-outline-info">Retour à la page gestion</a>
 
 <?php
 
 $myPortefolioRepo = new PortefolioRepository($db);
 ?>
-<section style="display:flex; flex-wrap: wrap; margin:auto;">
+<section style="display:flex; flex-wrap: wrap; margin:auto; margin-top:4%;">
 <?php
 $portefolioTable = $myPortefolioRepo->getListName();
 
 foreach ($portefolioTable as $Portefolios) {
     echo " <div class='card' style='width:45%;'>
-    <img src=../../../images/". $Portefolios['picture_portefolio']." width='320' height='200' class='img-fluid' "."</img>
-    <img src=../../../images/". $Portefolios['originPicture_portefolio']." width='320' height='200' class='img-fluid' "."</img>
-    <p> Lieu : ". $Portefolios['evenement_portefolio'] . "</p>
+    <img src=../../../images/". $Portefolios['picture_portefolio']." width='240' class='img-fluid' style='margin:auto; margin-top:1%; margin-bottom:2%;' "."</img>
+    <a class='btn btn-light' href='Affiche-OriginPicturePortefolio.php?id=".$Portefolios['id_portefolio']."'>Voir la photo en taille originale</a>
+    <p> Evenement : ". $Portefolios['evenement_portefolio'] . "</p>
     <p> Lieu : ". $Portefolios['lieu_portefolio'] . "</p>
     <p> Date : ". $Portefolios['date_portefolio'] ."</p>
     <p> Autre : ". $Portefolios['other_portefolio'] ."</p>

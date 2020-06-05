@@ -67,6 +67,20 @@ class PortefolioRepository
        return $tabloDonnees;
    }
 
+   public function AfficheOriginPicture($id_portefolio)
+   {
+       $tabloDonnees = [];
+       //execute une requete SELECT qui récupère uniquement les noms de chaque portefolio
+       $req = $this->_db->query("SELECT originPicture_portefolio FROM portefolio WHERE id_portefolio=".$id_portefolio);
+       //  transformer le résultat en array
+       while ($donnees = $req->fetch()) {
+         array_push($tabloDonnees, $donnees);
+       }
+       // retourner cet array
+       return $tabloDonnees;
+       
+   }
+
    public function update(Portefolio $portefolio)
    {
        // On prépare la requete afin de modifier un Portefolio dans

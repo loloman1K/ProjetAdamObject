@@ -77,13 +77,13 @@ class ArticleRepository
    {
        $request = $this->_db->prepare("UPDATE article SET title_art= :title, page_art= :page, text_art= :text, picture_art= :picture, originPicture_art= :originPicture, link_art= :link WHERE id_art=".$article->id_art());
        $request->execute(array(
-           'title' => $portefolio->picture_portefolio(),
-           'page' => $portefolio->evenement_portefolio(),
-           'text' => $portefolio->lieu_portefolio(),
-           'abstract' => $portefolio->date_portefolio(),
-           'picture' => $portefolio->originPicture_portefolio(),
-           'originPicture' => $portefolio->originPicture_portefolio(),
-           'link' => $portefolio->other_portefolio()
+           'title' => $article->title_art(),
+           'page' => $article->page_art(),
+           'text' => $article->text_art(),
+           'abstract' => $article->abstract_art(),
+           'picture' => $article->picture_art(),
+           'originPicture' => $article->originPict_art(),
+           'link' => $article->link_art()
        ));
    }
 

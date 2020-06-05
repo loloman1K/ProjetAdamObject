@@ -75,7 +75,7 @@ class ArticleRepository
 
    public function update(Article $article)
    {
-       $request = $this->_db->prepare("UPDATE article SET title_art= :title, page_art= :page, text_art= :text, picture_art= :picture, originPicture_art= :originPicture, link_art= :link WHERE id_art=".$article->id_art());
+       $request = $this->_db->prepare("UPDATE article SET title_art= :title, page_art= :page, text_art= :text, abstract_art= :abstract, picture_art= :picture, originPict_art= :originPicture, link_art= :link WHERE id_art=".$article->id_art());
        $request->execute(array(
            'title' => $article->title_art(),
            'page' => $article->page_art(),

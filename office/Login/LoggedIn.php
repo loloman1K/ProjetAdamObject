@@ -41,6 +41,7 @@ if (isset($_GET['testlog'])){
   <div class="card-body">
     <h5 class="card-title">Article</h5>
     <a href="crud/Add-Article.php" class="btn btn-outline-primary">Ajouter un article</a>
+    <a href="crud/Liste-Article.php" class="btn btn-outline-primary" style="margin-top:2%;">Liste des articles</a>
   </div>
 </div>
 
@@ -49,6 +50,7 @@ if (isset($_GET['testlog'])){
   <div class="card-body">
     <h5 class="card-title">Film audio</h5>
     <a href="crud/Add-Filmsad.php" class="btn btn-outline-primary">Ajouter un film audio</a>
+    <a href="crud/Liste-Filmsad.php" class="btn btn-outline-primary" style="margin-top:2%;">Liste des films audio</a>
   </div>
 </div>
 

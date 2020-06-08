@@ -16,7 +16,7 @@ require '../../../chargeauto.php';
 
 $myPortefolioRepo = new PortefolioRepository($db);
 ?>
-<section style=display:flex; flex-wrap: wrap; margin:auto; margin-top:4%;">
+<section style="display:flex; flex-wrap: wrap; margin:auto; margin-top:4%;">
 <?php
 $portefolioTable = $myPortefolioRepo->getListName();
 

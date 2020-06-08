@@ -74,3 +74,5 @@ $myArticleRepo->update($myArticle);
         <label for="link" style="color:black; ">Lien</label>
         <input type="text" id="link" name="link" class="form-control" value="<?php echo $link ?>">
     </div>
+
+<a href="Liste-Article.php" class="btn btn-outline-info">Retour à la page des articles</a>

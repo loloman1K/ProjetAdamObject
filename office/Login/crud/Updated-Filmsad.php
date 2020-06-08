@@ -61,3 +61,5 @@ $myFilmsadRepo->update($myFilmsad);
         <label for="duration" style="color:black; ">duration </label>
         <input type="text" id="duration" name="duration" class="form-control" value="<?php echo $duration ?>">
     </div>
+
+<a href="Liste-Filmsad.php" class="btn btn-outline-info">Retour à la page des films audio</a>

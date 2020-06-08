@@ -22,8 +22,8 @@ $portefolioTable = $myPortefolioRepo->AfficheOriginPicture($id);
 
 
 
-echo " <div class='card' style='width:45%;'>
-<img src=../../../images/".$portefolioTable['originPicture_portefolio']." width='480' class='img-fluid' style='margin:auto; margin-top:1%; margin-bottom:2%;' "."</img>
+echo " <div class='card' style='width:45%; margin-top:5%;'>
+<img src=../../../images/".$portefolioTable[0]['originPicture_portefolio']." width='480' class='img-fluid' style='margin:auto; margin-top:1%; margin-bottom:2%;' "."</img>
 
 </div>";
 

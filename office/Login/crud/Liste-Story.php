@@ -21,7 +21,7 @@ $myStoryRepo = new StoryRepository($db);
 $storyTable = $myStoryRepo->getListName();
 
 foreach ($storyTable as $Stories) {
-    echo " <div class='card' style='width:45%;'>
+    echo " <div class='card' style='width:45%;margin-bomttom:4%; margin:auto;'>
     <img src=../../../images/". $Stories['picture_story']." width='240' class='img-fluid' style='margin:auto; margin-top:1%; margin-bottom:2%;' "."</img>
     <a class='btn btn-light' href='Affiche-OriginPictureStory.php?id=".$Stories['id_story']."'>Voir la photo en taille originale</a>
     <p> Description : ". $Stories['text_story'] . "</p>

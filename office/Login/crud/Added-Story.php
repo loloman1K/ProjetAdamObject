@@ -35,14 +35,18 @@ $myStoryRepo = new StoryRepository($db);
 
 $myStoryRepo -> add($myStory);
 
-  echo " <article>
+  echo " <div class='card' style='width:45%;'>
               <p> Date : ". $storyTable['date_story'] ."</p>
               <p> Description : ". $storyTable['text_story'] ."</p>
               <img src=../../../images/". $storyTable['picture_story']." width='320' height='200' class='img-fluid' "."</img>
               <img src=../../../images/". $storyTable['originPicture_story']." width='320' height='200' class='img-fluid' "."</img>
-      </article>";
+      </div>";
 
 ?>
+
+<a href="Liste-Story.php" class="btn btn-outline-info" style="margin-top:2%;">Retour à la page des Stories</a>
+
+
 <?php
 
 require '../../vueadmin/footer.php';

@@ -36,15 +36,18 @@ $myPortefolioRepo = new PortefolioRepository($db);
 
 $myPortefolioRepo -> add($myPortefolio);
 
-  echo " <article>
+  echo " <div class='card' style='width:45%;'>
               <img src=../../../images/". $portefolioTable['picture_portefolio']." width='320' height='200' class='img-fluid' "."</img>
               <img src=../../../images/". $portefolioTable['originPicture_portefolio']." width='320' height='200' class='img-fluid' "."</img>
               <p> Lieu : ". $portefolioTable['lieu_portefolio'] . "</p>
               <p> Date : ". $portefolioTable['date_portefolio'] ."</p>
               <p> Autre : ". $portefolioTable['other_portefolio'] ."</p>
-      </article>";
+      </div>";
 
 ?>
+
+<a href="Liste-Portefolio.php" class="btn btn-outline-info" style="margin-top:2%;">Retour à la page des Portefolio</a>
+
 <?php
 
 require '../../vueadmin/footer.php';

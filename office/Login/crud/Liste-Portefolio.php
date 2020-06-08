@@ -16,12 +16,12 @@ require '../../../chargeauto.php';
 
 $myPortefolioRepo = new PortefolioRepository($db);
 ?>
-<section style="display:flex; flex-wrap: wrap; margin:auto; margin-top:4%;">
+<section style=display:flex; flex-wrap: wrap; margin:auto; margin-top:4%;">
 <?php
 $portefolioTable = $myPortefolioRepo->getListName();
 
 foreach ($portefolioTable as $Portefolios) {
-    echo " <div class='card' style='width:45%;'>
+    echo " <div class='card' style='width:45%;margin-bomttom:4%; margin:auto;'>
     <img src=../../../images/". $Portefolios['picture_portefolio']." width='240' class='img-fluid' style='margin:auto; margin-top:1%; margin-bottom:2%;' "."</img>
     <a class='btn btn-light' href='Affiche-OriginPicturePortefolio.php?id=".$Portefolios['id_portefolio']."'>Voir la photo en taille originale</a>
     <p> Evenement : ". $Portefolios['evenement_portefolio'] . "</p>

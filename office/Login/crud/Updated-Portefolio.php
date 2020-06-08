@@ -67,3 +67,5 @@ $portefolioTable = array(
         <label for="other" style="color:black; ">Autre</label>
         <input type="text" id="other" name="other" class="form-control" value="<?php echo $other ?>">
     </div>
+
+    <a href="Liste-Portefolio.php" class="btn btn-outline-info">Retour à la page des portefolio</a>

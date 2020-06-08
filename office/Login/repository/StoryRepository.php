@@ -65,6 +65,20 @@ class StoryRepository
        return $tabloDonnees;
    }
 
+   public function AfficheOriginPicture($id_story)
+   {
+       $tabloDonnees = [];
+       //execute une requete SELECT qui récupère uniquement les noms de chaque portefolio
+       $req = $this->_db->query("SELECT originPicture_story FROM story WHERE id_story=".$id_story);
+       //  transformer le résultat en array
+       while ($donnees = $req->fetch()) {
+         array_push($tabloDonnees, $donnees);
+       }
+       // retourner cet array
+       return $tabloDonnees;
+       
+   }
+
    public function update(Story $story)
    {
        // On prépare la requete afin de modifier un story dans 

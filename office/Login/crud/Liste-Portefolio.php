@@ -28,7 +28,7 @@ foreach ($portefolioTable as $Portefolios) {
     <p> Lieu : ". $Portefolios['lieu_portefolio'] . "</p>
     <p> Date : ". $Portefolios['date_portefolio'] ."</p>
     <p> Autre : ". $Portefolios['other_portefolio'] ."</p>
-    <a class='btn btn-outline-warning' href='Update-Portefolio.php?id=".$Portefolios['id_portefolio']."&picture=".$Portefolios['picture_portefolio']."&originPicture=".$Portefolios['originPicture_portefolio']." &evenement=".$Portefolios['evenement_portefolio']." &lieu=".$Portefolios['lieu_portefolio']." &date=".$Portefolios['date_portefolio']." &other=".$Portefolios['other_portefolio']."'>Modifier ce Portefolio</a>
+    <a class='btn btn-outline-warning' style='margin-bottom:1%;' href='Update-Portefolio.php?id=".$Portefolios['id_portefolio']."&picture=".$Portefolios['picture_portefolio']."&originPicture=".$Portefolios['originPicture_portefolio']." &evenement=".$Portefolios['evenement_portefolio']." &lieu=".$Portefolios['lieu_portefolio']." &date=".$Portefolios['date_portefolio']." &other=".$Portefolios['other_portefolio']."'>Modifier ce Portefolio</a>
     <a class='btn btn-outline-danger' href='Delete-Portefolio.php?id=".$Portefolios['id_portefolio']."'>Supprimer ce Portefolio</a>
 
 </div>";

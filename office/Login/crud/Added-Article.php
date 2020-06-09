@@ -40,11 +40,11 @@ $myArticleRepo = new ArticleRepository($db);
 $myArticleRepo -> add($myArticle);
 
   echo " <article>
-              <img src=../../../Adam story rendu attendu/picture/". $articleTable['picture_art']." width='320' height='200' class='img-fluid' alt='img reduite'</img>
-              <img src=../../../Adam story rendu attendu/picture/". $articleTable['originPict_art']." width='320' height='200' class='img-fluid' alt='img taille reelle'</img>
-              <p> Titre : ". $articleTable['title_art'] . "</p>
-              <p> Page : ". $articleTable['page_art'] ."</p>
-              <p> Texte : ". $articleTable['text_art'] ."</p>
+        <img src='../../../Adam story rendu attendu/picture/". $articleTable['picture_art']."' width='320' height='200' class='img-fluid' alt='img reduite'</img>
+        <img src='../../../Adam story rendu attendu/picture/". $articleTable['originPict_art']."' width='320' height='200' class='img-fluid' alt='img taille reelle'</img>
+        <p> Titre : ". $articleTable['title_art'] . "</p>
+        <p> Page : ". $articleTable['page_art'] ."</p>
+        <p> Texte : ". $articleTable['text_art'] ."</p>
       </article>";
 
 ?>

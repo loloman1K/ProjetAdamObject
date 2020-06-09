@@ -36,12 +36,12 @@ $articleTable = array(
 $myArticle = new Article($articleTable);
 
 $myArticleRepo = new ArticleRepository($db);
-echo var_dump($myArticleRepo->getListName());
+// echo var_dump($myArticleRepo->getListName());
 $myArticleRepo -> add($myArticle);
 
   echo " <article>
-              <img src=../../../images/". $articleTable['picture_art']." width='320' height='200' class='img-fluid' "."</img>
-              <img src=../../../images/". $articleTable['originPict_art']." width='320' height='200' class='img-fluid' "."</img>
+              <img src=../../../Adam story rendu attendu/picture/". $articleTable['picture_art']." width='320' height='200' class='img-fluid' alt='img reduite'</img>
+              <img src=../../../Adam story rendu attendu/picture/". $articleTable['originPict_art']." width='320' height='200' class='img-fluid' alt='img taille reelle'</img>
               <p> Titre : ". $articleTable['title_art'] . "</p>
               <p> Page : ". $articleTable['page_art'] ."</p>
               <p> Texte : ". $articleTable['text_art'] ."</p>

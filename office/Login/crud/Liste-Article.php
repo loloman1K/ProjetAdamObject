@@ -26,8 +26,8 @@ foreach ($articleTable as $Article) {
     <p> Page : ". $Article['page_art'] . "</p>
     <p> Texte : ". $Article['text_art'] . "</p>
     <p> Abstrait : ". $Article['abstract_art'] ."</p>
-    <img src=../../../images/". $Article['picture_art']." width='320' height='200' class='img-fluid' "."</img>
-    <img src=../../../images/". $Article['originPict_art']." width='320' height='200' class='img-fluid' "."</img>
+    <img src=../../../Adam story rendu attendu/picture/". $Article['picture_art']. " width='320' height='200' class='img-fluid' alt='taille reduite'</img>
+    <img src=../../../Adam story rendu attendu/picture/". $Article['originPict_art']. " width='320' height='200' class='img-fluid' alt='taille reelle'</img>
     <p> Lien : ". $Article['link_art'] ."</p>
     <a class='btn btn-outline-warning' href='Update-Article.php?id=".$Article['id_art']."&picture=".$Article['picture_art']."&originPict=".$Article['originPict_art']." &title=".$Article['title_art']." &page=".$Article['page_art']." &text=".$Article['text_art']." &abstract=".$Article['abstract_art']." &link=".$Article['link_art']."'>Modifier cette article</a>
     <a class='btn btn-outline-danger' href='Delete-Article.php?id=".$Article['id_art']."'>Supprimer cet article</a>
